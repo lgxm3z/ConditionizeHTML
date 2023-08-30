@@ -1,6 +1,7 @@
 import re
 
 DEBUG = False  # Change this to test the behavior
+MINIFY = False
 
 
 def process_conditional_block(html_content):
@@ -65,7 +66,7 @@ html_content = '''
 # Conditionally process the specific block
 new_html_content = process_conditional_block(html_content)
 
-if (not DEBUG):
+if (MINIFY):
     new_html_content = minify_html(new_html_content)
 
 print(new_html_content)
