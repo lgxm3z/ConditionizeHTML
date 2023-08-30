@@ -8,13 +8,13 @@ Dynamically process HTML files based on conditional statements embedded within c
     <title>My Webpage</title>
 </head>
 <body>
-    <!-- @If DEBUG -->
+    <!-- @if DEBUG -->
     <script>
         console.log('Debug mode');
     </script>
     <!-- @endif -->
 
-    <!-- @If RELEASE -->
+    <!-- @if RELEASE -->
     <script>
         console.log('Release mode');
     </script>
